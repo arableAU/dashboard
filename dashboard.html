@@ -1,0 +1,51 @@
+<!--
+    Written by Joshua Tambunan
+    Copyright of Arable AU 2018
+    Date: 11/02/2018
+    Notes: HTML file for the initial dashboard (first page following log-in)
+    Version: 0.1
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>My Dashboard</title>
+
+        <meta name="viewport" content="width=device-width initial-scale=1"> 
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/navigation.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/chart.js/dist/chart.js"></script> 
+    </head>
+    <body>
+        <header>
+            <h1>Arable</h1>
+            <span onclick="openNav()">Open Navigation</span>
+        </header>
+        <div id="sideNav" class="sideNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="">Portfolio Tracker</a>
+            <a href="">Billing</a>
+            <a href="">Settings</a>
+            <a href="">Help</a>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        
+
+        <div id="main">
+            <h3>Portfolio Overview</h3>
+            <canvas id="myPortfolio">
+
+            </canvas>
+            <figcaption>Graph should be above me</figcaption>
+        </div>
+
+        <footer>
+            <!-- insert copyright stuff here -->
+            &copy; Copyright Arable AU 2018. All rights reserved.
+        </footer>
+    </body>
+</html>
